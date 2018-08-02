@@ -1,15 +1,16 @@
 # Thinkful 
-# Author: Christine Sung
+## Author: Christine Sung
 
-## Table of Contents
+# Table of Contents
  * [Introduction](#introduction)
  * [Units and Lessons](#unit-and-lesson)
  
-## Introduction
+# Introduction
+Thinkful data science bootcamp
 
-
-## Units and Lesson
- # Unit 1 Lesson 2 SQL
+# Units and Lesson
+## Unit 1 Lesson 2 SQL
+SQL exercise
  
 
 
