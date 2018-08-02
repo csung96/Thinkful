@@ -2,8 +2,8 @@
 # Author: Christine Sung
 
 ## Table of Contents
- * [Introduction] (#introduction)
- * [Units and Lessons] (#unit-and-lesson)
+ * [Introduction](#introduction)
+ * [Units and Lessons](#unit-and-lesson)
  
 ## Introduction
 
