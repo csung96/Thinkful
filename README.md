@@ -3,7 +3,7 @@
 
 # Table of Contents
  * [Introduction](#introduction)
- * [Units and Lessons](#unit-and-lesson)
+ * [Units and Lessons](#units-and-lesson)
  
 # Introduction
 Thinkful data science bootcamp
