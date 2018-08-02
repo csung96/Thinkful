@@ -1,0 +1,71 @@
+Grouping: allows you to aggregate bast amoungs of data relatively quickly, outputting reasonably easy to understand data sets that tell the story youre looking to tell
+* grouping in SQL will also lead us to introduce functions
+
+GROUPS
+* how to actually execute grouping
+* GROUP BY statment comes after WHERE clauses and before any ORDER BY clauses. 
+* without an aggregation, grouping simply gets rid of dublicates so all columns included in your selecr statement mut also be included in your group by statment
+* EX: 
+    SELECT
+        city
+     FROM
+        stations
+    GROUP BY city
+* returns all unique city names in station table. 
+* we can also use numbers rather than names to ref columns
+* only one column so we could just do group by 1 instead of group by city 
+* if we had three solumns selected, group by 1, 2, 3
+
+AGGREGATORS
+* things that take a collection of values and return a single value.
+* can be things like max or avg of colection of values
+* saw aggregator functions in NumPy and Pandas
+* EX: query for the mean latitude and longitude for stations in each city, as well as station count. 
+    * when working with aggregators, name of column on your output defaults to the function you generate
+    SELECT
+        city,
+        AVG(lat) lat,
+        AVG(long) long,
+        COUNT(*) station_count
+    FROM
+        stations
+    GROUP by 1
+-- We exclude columns that use aggregate functions from the group by
+-- clause, which is why we're only grouping by the city column.
+
+* AVG tae savg of all values in specifie column with a given calue in the grouped columns
+COUNT(*) count the number of rows with the given value in grouped columns
+
+
+
+
+DRILL
+1. What was the hottest day in our data set? Where was that?
+SELECT
+    ZIP,
+	max(MaxTemperatureF) MaxTemperatureF
+FROM
+    weather
+    
+2. How many trips started at each station?
+select
+	name,
+	dockcount
+from
+	stations
+group BY 1
+
+3. What's the shortest trip that happened?
+select
+	trip_id,
+	min(duration) duration
+from
+	trips
+    
+4. What is the average trip duration, by end station?
+select
+	end_station, 
+	avg(duration) duration
+from
+	trips
+group BY end_station

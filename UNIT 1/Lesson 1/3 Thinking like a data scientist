@@ -1,0 +1,11 @@
+TLADS- think like a data scientist (show how to take lesson's concept and implement it data scientist style)
+
+approach problems from 3 perspectives
+* Curiosity: engine behind why and how questions; to know more than what we can see or understand right now
+* Practicality: make sure to define Q's in ways that are amenable to data oriented solutions
+* Skepticism: not only describe what seems to be happening in dataset but also how much confidence we can place in results we see
+
+MAKING REAL LIFE QUESTIONS TESTABLE: 
+* provide concrete def of bad things, such as being the victim of a crime
+* provide a concrete def of good people such as people who volunteer once a month or more
+* collect data, find existing dataset , continaing data from ppl who were and werent victims of crimes and do and do not volunteer once a month or more

@@ -1,0 +1,100 @@
+Work on how we get data out of such database, specifically through QUERYING using SQL
+* querying is often first step in process where data scientist get involved 
+
+SELECT and FROM
+* two elements that every query will have: select statement and a from statment. 
+* can put together a functioning query
+Select: 
+* names the columns of interest. 
+* separate each column with a comma and those are the columns that will be returned when query executes
+From: 
+* names the table to go to to look for the columns
+* cominging those two elements is enough to make a functioning query
+
+EX: lets try a simple one on bikeshare database grabbing just names of stations. 
+* can be done from 'execute SQL' panel of SQLiteBrowser
+        SELECT
+            name
+        FROM
+            stations
+* when exectuted, that query will return all entries in name column of station table
+
+there are a few more options we can use here to make even these basic queries a little easier to execute
+    * can rename columns by including a new name after a space following the column
+    * EX: to run same query with the name column changed to station_name we'd do this
+            SELECT
+                name station_name
+            FROM
+                stations
+    * renaming columns will be partucularly useful when working with mult tables simultaneously and the naming conventions of the inital table are no longer sufficient. 
+        * EX: two tables may have column named id and so distinguishing those columns will be important
+        
+        
+* : rather than typing out every specific column name, use * to select all columns
+SELECT
+    * 
+From
+    stations
+    
+    
+
+WHERE AND ORDER
+* SQL tends to think in terms of rows
+* simplest ex of that is through WHERE clauses. 
+* WHERE clauses follow FROM statement and apply conditions to the rows to be returned.
+* a Where clause will apply a dondition to a specific column
+* conditions can collow basic = > < structure when applied to numeric columns or use some build in operators such as LIKE or BETWEEN when applied to toher data types. 
+* can link multiple conditions together using AND and OR (behave like traditional conjunctions in programming
+
+Order clasuses
+* end of query, you can order rows according to one or more columns with ORDER BY 
+* you can reference the columns either by name or by number
+* by default the order is ascending, through using DESC at the end of your order by clause reverses this to put your rows in descending order
+
+let's combine these two new cluases to write a query for trip ID and start time for all of the trips in zip code 94107 done on bike number 27, ordered by their length , with the longest first:
+-- Note we're selecting from two columns for the first time here.
+SELECT
+    trip_id,
+    start_date
+FROM
+    trips
+WHERE
+    bike_id = 27 AND
+    zip_code = 94107
+ORDER BY duration DESC
+
+-- These are comments, by the way. Use two dashes for single-line comments.
+
+Strings: use ''
+
+LIMIT: can limit number of rows you return to a specific number
+LIMIT 3
+
+DRILL
+1. The ID's and durations for all trips of duration greater than 500, ordered by duration.
+select
+	trip_id, 
+	duration
+from
+	trips
+where
+	duration > 500 
+order BY duration 
+
+
+2. Every column of the stations table for station id 84.
+select
+	* 
+from
+	stations
+where
+	station_id = 84 
+
+3. The min temperatures of all the occurrences of rain in zip 94301.
+select
+	MinTemperatureF
+from
+	weather
+where
+	ZIP = 94301 and events = 'Rain'
+

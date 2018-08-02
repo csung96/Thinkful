@@ -1,0 +1,35 @@
+WHAT IS DATABASE?
+* stores data
+Operations, Storage and Analytics
+* operational service consists of several different aspects, one of them is to gaather and write data
+* could be the sign up info gathered on website or data about placement of ad
+* not typically designed to store that info, so it has to write it out somewhere (database)
+
+many advantages of database over a local file system for storing data:
+1. can be distributed across many machines and have a higher capacity than any single machine
+2. mult users can access remote database at the same time and access the same 'truth'
+3. databases can also take data from mult sources and store all that data in a single system
+4. powerful tool for formatting and organizing data, making it far more comprehensible to users
+
+database typically consists of series of tables, each table with its own defined schema (or organization)and a number of 'records' (rows):
+* TABLE is set of rows and columns populated with data
+* data is consistently org according to the oclumns with column def remaining constant throughout the table
+* that organization is called the SCHEMA
+* one diff is that database schemas can be somewhat involved to change, particularly when dealing with large databases, and changes can cause problems unless carefully excuted. 
+*good schema is tricky to define but goes a long way to enabling  good analytics
+* each RECORD (row) of data in a table will conform to the table's schema
+* ideally all rows of data in a table would have an entry in every FIELD or column except NULL or N/A
+
+Different kinds of tables; 
+1. raw tables: these contain data in least processed form possible, usually loaded into database as simply as possible
+2. processed table: some work has been done to transform data into more readable and usable form
+3. roll-up tables: specific kind of processed table, which take data and aggregate it in some more comprehensible or useful way
+
+
+
+MEET SQL:
+* very little that happens with database itself; data is just sitting there
+* to get data into more useful env, youll need to write queries. 
+
+Queries: requests for specific parts of database plus if you choose manipulating that data in useful ways
+* WL = language the global std for quaring
