@@ -1,0 +1,30 @@
+T-VALUES
+* in previous module, w derived p-values from t-values, taking both tails of the t-dist
+* why look at both the pos and neg t-value?
+    * default t-test is "two tailed"
+    * means that it test the likelihood of getting a value "more extreme" than t
+      value in either direction
+* if there is no possibility of getting a neg t-value, then you can use a one-tailed p-value which means the p-value is calc by summing the area under the curve of only one of the two tails. 
+    * one tailed test would be appropriate when comparing an avg weight to 0
+    * for the t-value to be neg, the avg weight would also have to be neg
+* typically the two tailed t-test is used, under the assump that it is better to be conservative (get higher p-values than we should) than to be too liberal (lower p-values)
+
+PHILOSOPHY OF NULL HYPOTHESIS SIGNIFICANCE TESTING
+* typical interpretation of p-values ("less than .05 m3eans my hypothesis was right") works fairly well in practical terms
+* however its important to know that interpretation is wrong
+* the p-value rep the prob of getting the data you have if the null hyp were true
+* the null hyp is typically a no effect hyp
+* that means that when the p-value is less than .05, there is less than 5% chance of getting your part data by random chance even though there was no effect in the pop
+* leads us to reject null hyp of no effect
+
+* not that there is no mention of the actual hyp (there is an effect and it is X) anywhere in there
+* the entire edifice of NULL HYP SIG TESTING that culminates in p-values is almost completely agnostic to the content of your actual hypothesis
+* all NHST allows the person to do is to conclude that there is probably not no effec
+* in the universe of NHST the actual effect, could be anything at all
+
+happily our actual hyp does come into play in another way
+* purpose of an exp such as A/B test is to create a situation where there are only two possible outcomes
+* if your hyp is correct, outcome X will occur, while if null is correct, X will not occur
+* if the possibility space is indeed limited to oly those two potential outcomes, then rejecting null hyp (X did not occr) may be considered tantamount to accepting the hyp (X occured) 
+
+however, can never limit the possibility space to just two outcomes

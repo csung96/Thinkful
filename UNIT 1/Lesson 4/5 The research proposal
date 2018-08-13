@@ -1,0 +1,70 @@
+A Research Proposal is an organized battle plan in three parts:
+
+THE PROBLEM
+* where you define the question/problem, justify why problem should be studied, review what we already know about the problem
+* EX: 
+    How to decrease employee churn? Churn creates inefficiency as new people have to
+    be trained in and knowledge from experienced workers is lost. In exit interviews,
+    employees name "out-of-date technology" and "poor communication" as major
+    motivations to leave.
+THE POTENTIAL SOLUTION
+* propose a hypothesis (potential explanation) to be tested
+* Ex: 
+    Adding Slack to employer computers will decrease churn by increasing communication
+THE ETHOD OF TESTING THE SOLUTION
+* describe the design of the experiment, the analysis plan, and set benchmarks:
+        Install Slack on half of the employees' computers and monitor churn for the
+    next two months. The variable of interest is churn in Slack and non-Slack groups.
+    This is an A/B manipulation where Slack is installed or not installed.
+    
+    We will compute the churn rate for two months before the study and compare it tthe churn rate in Slack and non-Slack groups for two months during the study.
+
+If churn in the next two months decreases by 10% among Slack users (using churn estimates from the past year), conclude that Slack is effective and install on all computers. If churn in the next two months decreases among Slack users, but by less than one standard deviation, observe for two more months before deciding. If churn does not decrease in two months, uninstall Slack.
+
+
+even if no one reads research proposal but you, it is important to clearly lay out exactly what you plan to do and why
+* research proposal helps to avoid many common experimentation pitfalls such as: 
+     * mismatch b/w question and study design
+         * EX: study that claims to address churn but actually focuses on employee
+         communication and doesnt measure church
+     * a design that does not generate usable data
+         * EX: want to compare employee satisfaciton in 2 groups but the groups use
+         different satisfaction measures and theres no way to copmare them
+     * False positives
+         * EX: changing the endpoints midway through a study by moving benchmarks or 
+         stopping data collection early when things start to look promising increases 
+         risk of getting results that look good but reflect random chance rather than
+         real trends
+     * the research proposal also presents and maintains a std
+         * it should outline the way things should be and hold you to it. 
+         * in real world there will be pressure to run things faster, reduce costs, 
+         or cut corners here or there
+         * proposal provides the std for how the experiment should be run
+         * it also provides an easy response to questions like: "why is it taking so
+         long?"
+
+goot research proposal starts with big question (how to reduce employee churn) but rapidly narrows in scope (adding slack to employee computers will decrease churn by increasing communication)
+* it is a practical reference document that helps to maintain a straight line b/w goals and actions
+
+
+
+
+DRILL: MAKE A QUICK RESEARCH PROPOSAL
+SCENARIO:
+To prevent cheating, a teacher writes three versions of a test. She stacks the three versions together, first all copies of Version A, then all copies of Version B, then all copies of Version C. As students arrive for the exam, each student takes a test. When grading the test, the teacher finds that students who took Version B scored higher than students who took either Version A or Version C. She concludes from this that Version B is easier, and discards it.
+
+
+THE PROBLEM:
+How to test if the three versions (A, B, and C) are equal in level of difficulty. The teacher puts all the versions together in the order of Version A on top, followed by Version B, and on the bottom with Version C. There is no random assignment of the versions because students take a test from the pile as they walk in. This means that everyone that walk into the classroom around the same time, will have the same version. 
+    
+THE POTENTIAL SOLUTION
+Randomly assigning different verions to students will change results where all three versions will be equally difficult or a different version may have significanlty lower test scores (implying that that version is more difficult).
+
+THE METHOD OF TESTING THE SOLUTION
+Restack the pile of the test so that versions alternate in the order of A, B, C. Once all students are in the class, pass out the tests. Therefore students in close proximity will have different versions, which will prevent similar answers from cheating. This method will also prevent the previous problem of students coming in together (usually friends will walk in together) getting the same versions as well. 
+
+The random assignment of the tests will hopefully prevent the bias and problems that occured in the initial scenario. 
+
+After grading, calculate the average score for each version. If one test as a significantly lower score than the others, then it is okay to conclude that that version was more difficult. 
+
+

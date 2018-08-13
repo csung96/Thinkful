@@ -1,0 +1,113 @@
+A/B testing: most common in business
+* technique used to identify whether one version of an object of interest (product, marketing campaign, email text) is better at producing a desired outcome than another. 
+
+Components of an A/B test are: 
+* TWO VERSIONS of something whose effects will be compared
+    * one version is a control version (often already in use) and one is a test
+      version (which has changes from control)
+    * that change is often called the treatment
+    * if starting from scratch, you may have two diff test versions to compare each
+      other
+* SAMPLE, divided into two groups
+    * each sample should be selected so that it is similar to the population you
+      want to understand
+    * the groups should be similar to one another so that any differences b/w them
+      can be attributed to seeing version A or version B and not something else
+    * want to the split of b/w A and B to be as random as possible
+* HYPOTHESIS: what you exlect to happen
+    * ex: I expect HTML email will achieve higher open and conversion rate than
+      plain email 
+* OUTCOME(S) of interest: what you expect will change as a result of using version
+  A or B and how you will measure that change
+    * means you have to decide on a key metric which should capture the effect of
+      your change and relect the motivations for the test in the first place
+* OTHER MEASURED VARIABLES
+    * includes info about the two groups that can be used to ensure they are
+      similar as well as secondary outcomes that are less important than the
+      primary outcomes of interest but which might also change in response to using
+      version A or version B
+      
+GETTING A GOOD SAMPLE
+* One of he key elements of an A/B test is the sample
+* particularly important when it comes to actually designing own experiement is making sure that two groups A and B are as comparable as possible
+* only difference should be the treatment they receive
+
+* if you have a constantly occuring easily randomizeable test, where the thing youre interested in measuring is happening all the time in easily separable outcomes, this is pretty easy. 
+* something like marketing emails are usually like this
+* thousands of emails are being sent out all the time and you can easily randomize b/w A and B
+
+* however, plenty of things can make this more complex. 
+* the most common challenge is a test that either has to be all on or all off. 
+* could be smoething like whether some people in shop makes people stay longer
+* cant really have some people in shop hearing the music and others not
+
+* in that case, getting to randomization becomes an art form
+* want to think about things like seasonality- making sure there is no difference in your two groups b/c of day of week or time of year
+* perhaps behavior is just different on weekends, at nights, or in summer
+
+KEYS TO KEY METRICS
+*the other major sticking point is picking what you want to measure, your outcome
+* you can monitor many metrics during most tests, but you typically want to have one key metric that iwll be your determining factor for whather a test is successful or not
+
+* several things that make a good key metric
+* want it to be as closely related to your business goal as possible
+* measuring clicks is good, but if it makes sense youd rather measure sales or purchases
+* this helps prevent getting a result that just affects an intermediate step w/o improving the actual goal
+* just b/c people engage doesnt mean theyll follow through
+
+* you also want key metric to be reliable measureable
+* many experiments are ruined by measurement error. ideally this means something that is passibely recorded, rather than requiring an additional engagement from subjects or users
+* want to aboid self reported data, because that invites its own biases
+
+* want to capture co,plete effect of your change
+* sometimes this may mean time becomes important
+* maybe anemail campaign doesnt lead to an immediate increase insign ups, but customers convert later
+* trying to include window of impact thats both reasonable and still consistent across all observations is valuable characteristic for your metric
+
+THIS IS A TEST
+* go through an example
+* if we were trying to imporve clickthrough rate of email campaign, we might test two newsletters, one with black italic text and one with green bold tezt and exclamation point (Sale Today" vs "Sale Today!")
+
+* we would then randomly send one of two versions of email to subset of subscribers and track the number of clicks each version generated (outcome of interst)
+
+* we expect green/!/bold text will result in more clicks (hypothesis)
+* may also want to look at gender and age of our sample, if we have that info to make sure groups are similar
+* can also look at that info to make sure groups are similar
+* can also look at whehter two diff newsletters affect how quickly ppl open the email after receiveing it (secondary outcome) as well as click rate
+
+* if two groups appeared similar inage, gender and anything else, but click rates were higher for green/bold/! version, we can conclude that changing text caused more clickthroughs
+
+
+
+
+
+DRILL: GETTING TEST
+1. DOes a new supplement help people sleep better?
+    * randomly select a sample of 100 individuals
+    * randomly assign 50 to the new supplement group and another 50 to the placebo
+      (control group)
+    * Then for the next week, calculate the hours of sleep each individual gets
+    * if people from the supplment report higher rates of sleep, then the new
+      supplement helps people sleep better
+    * in order to avoid any biases, make sure each participant sleeps in a similar
+      environment (same mattress, alone, in a dark quiet room with no
+      interruptions)
+2. Will new uniforms help a gym's business
+    * for one week, have employees wear old uniform
+    * the next week, have employees wear new ones
+    * calculate business for each day and see which one had better business,
+      whether is it number of gym memberships
+    * make sure that these two weeks are not during a time of holiday or anything
+      that will affect the results. 
+3. Will a new homepage improve my online exotic rental business
+    * test between current and new online page
+    * for a week, use current and the following week use new homepage
+    * see how many rentals occur during each week in order to determine if changin
+      the hompage will imporve the business. 
+    * make sure the two weeks are not near a holiday that may bias results. 
+4. if i put please read in email subject will more people read my emails
+    * for a week send emails to half the employees with just normal subject lines and the other half with 'please read'
+    * see how many repsonse you get for each to see which subject line causes more people to read the emails
+    
+   
+    

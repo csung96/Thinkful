@@ -1,0 +1,69 @@
+BIAS: refers to anything that causes a sample to systematically differ from the pop
+* can come from: 
+    1. sampling procedure
+    2. assignment to conditions procedure
+    3. context of the study
+    4. the people running the study
+
+Sampling Bias (Selection bias): 
+* when a sample differs from the pop in some way- more women, yonger richer, more outgoing- then conclusions based on that samp may not apply to the pop
+* can be avoided by choosing the samp randomly from the pop
+
+Bias in assignment to conditions: 
+* similar to selection bias b/c it also represents a failure of randomness
+* sample is supposed to be separated into groups that are similar to one another. 
+* the groups then each experience one of the study conditions
+* if the groups are the same before they go into the study then any diff b/w the groups during the study must be due to the diff you introduce as part of the experiement and you can conclude that people in the pop will react similarly to your experimental stimuli
+
+EX: imagine you are comparing the effect of spinkles on liking icecream
+* one group given icecream with sprinkes and one is given plain
+* both groups rate how much they like the icecream
+* turns out icecream with sprinkles was liked more
+* if grups are similar, then you can conclude that sprinkles cause people to like icecream more
+* if groups are diff (sprinkeles group had ave age of 13 vs plain had 30) then its not clear whether sprinkles cause liking or whether younger people just like icecream more
+
+Bias can also come from the study context or setting
+* imagine you have great samp that is very similar to pop and you divide them into two groups into two rooms, and ask them to read and rate some ads for sodas
+* interested in how small differences b/w the ads seen by groups 1 and 2 will affect their reactions when they leave the rooms and are offered a soda afterward
+* to your surpise, gorup 1 overwhelmingly thanks you for soda and drinks up immediately wile only half of group 2 accept soda
+* conclude that ads for group 1 myst be better
+* unfortunatley what you dont know is that the heater was broken in group 1's room and temp was 90 degrees
+* CONTEXTUAL BIAS 
+
+Bias can come from people running the study
+* observer bias
+* best way to avoid is that people who interact with participants dont expect particular results
+
+
+
+
+A/A TESTING
+* of these sources of bias, all but selection bias may be detectable using A/A testing
+
+A/A TESTING provides context for the results of A/B testing
+* means comparing outcome of choice between identical versions of something
+* seems silly- if we divide all newsletter subscribers into 2 groups and send both same email, we would expect clickthrough rates for both to be identical --> but doesnt always happen
+
+A/A testing can identify problems with: 
+* Testing method: perhaps all version 1 emails were set to go out in morning when people are at work while verison 2 go ou in evening when people have leisure to shop
+* random split method: maybe mailing list is arranged chronologically by date subscribed and verison 2 was sent to first half of list with long term customers who are more likely to click
+    * size of sample: rarer the outcome, bigger sample needs to get an accurate est of response rate
+* any other outside factors that can affect outcome
+
+
+
+DRILL: AM I BIASED
+for each scenario, call out potential biases: 
+1. You're testing advertising emails for a bathing suit company and you test one version of the email in February and the other in May.
+    * may get a better respone in May since it is closer to summer (when bathing
+      suits are more necessary)
+    * bias can stem from the different time/season
+    
+2. You open a clinic to treat anxiety and find that the people who visit show a 3. higher rate of anxiety than the general population.
+    * clinics are generally open for lower price, for people who dont have great
+      health options.
+    * they may have greater anxiety
+3. You launch a new ad billboard based campaign and see an increase in website visits in the first week.
+    * 
+4. You launch a loyalty program but see no change in visits in the first week.
+

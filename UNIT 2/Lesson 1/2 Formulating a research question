@@ -1,0 +1,30 @@
+One way to think of stat model is as math expression of research question
+* begin with an outcome of interest, a particular variable that we want to understand, explain, and/or predict
+* our research Q in the relation to that outcome, may be as broad as 'How do we best predict the outcome of interest given the data?' or as narrow as 'What is the most accurate estimate of the outcome of interest for N groups under X conditions?'
+* the research Q will guide your model building and data exploration by spotlighting variables and inter-variable relationships of particular interest
+
+different types of research Q's also call for different types of models
+* research questions about odds or likelihood like 'will it rain today?' use models specifically designed to deal with binary outcomes (rain or doesnt rain)
+* Research Q about quantity such as how much will it rain, use models that deal with continuous outcomes
+
+as data scientist, you may be provided with research Q to answer, and your job will be to translate it into a stat model
+* but not always the case
+* defining own research Q is a more involved process and there are many questions you'll want to ask yourself: 
+    * what is already known about this topic?
+        * unless your goal is simply to learn a new stat method and the 
+          research Q itself is irrelevant, theres no point in reinventing
+          the wheel. 
+    * what sort of data or ways to collect data are availble to me on this
+      topic?
+        * A research Q w/o relevant data is useless
+    * what skills do i have?
+        * A research Q should be addressable using stat and programming
+          skills you have now, or can feasibly lea
+    * can this Q be answered using quantities or probabilities?
+        * since the plan is to address this Q using math model, it must be
+          amenable to numeric solution
+    * can this research Q be asked in one sentence?
+        * if you need more than one sentence to explain what you want to 
+          know, your Q is prob too broad or too vague to be useful and
+          needs refining
+

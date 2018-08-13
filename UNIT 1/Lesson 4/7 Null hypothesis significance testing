@@ -1,0 +1,28 @@
+P-VALUE LIMBO: HOW LOW CAN YOU GO?
+* statistical tests tend to be evaluated by the P-VALUES they return
+* even some laypeople know this general rule: p-value < 0.05 is good
+
+in acuality, p-values = culmination of null hypothesis testing
+* in Null Hypothesis testing, the tester has a hypothesis that describes what they think their data will look like if their expectations are confirmed. 
+* based on that hypothesis, they also define a null hypothesis, which describes what their data will look like if their expectations are not confirmex
+* EXAMPLE 1: 
+    * Hyp: people who whistle will be happier than people who do not whistle
+    * Null: There will be no difference in happiness b/w the two 
+* EXAMPLE 2: 
+    * hyp: There is intelligent life on other planetns
+    * null: there is no intelligent life on other planets
+
+Data is then compared to the null hyp
+* when eval two groups in a t-test, the size of the diff b/w the two groups is divided by the combined variance of the groups
+* this ratio, known as t-vale is then situated within a t-dist that rep the t-values you would get if null hyp were true
+
+The farther from the center the calc t-value, the less liekly it is that the null hypothesis is true. 
+* area under crve of t-dist (similar to norm dist but with thicker tails) is eq to one, and the total area defined by our t-value sums to the p-value
+* with t-value, you get the p-value (sum under the curve with that sample size and t-value)
+
+
+"THE EARTH IS ROUND, P<.05"
+* good decision making rule for p-values --> anything less than .05 means we REJECT H0
+* typically people take that to mean that their hypothesis is correct
+* the .05 threshold is useful b/c in theory, it would return a false pos (evidence to reject the null hyp when in fact there is no effect) for 1 in 20 tests and happens to correspond to 2 std dev. 
+* while the choice of a .05 threshold is arbitrary, it is the default assumption for most

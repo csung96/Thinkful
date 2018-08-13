@@ -1,0 +1,36 @@
+Statistical Models = ubiquitous
+* rely on them every time we check weather, choose movie reccomendations, elections
+
+EX: navigated public transit--> work with model
+* map represents all train lines in London in terns of their stops and intersections with one another
+* simplified representation of the real train lines
+* ex: it doesnt include any info on rel distances b/w the stops of the actual geographical position of the line
+* excludes info that is irrelevant to the needs of Tube travelers and by doing so, becomes much easier to use
+
+STATISTICAL MODELS: operate same way
+* represent complex info in a simplified way to serve a particular way
+* simplified mathmatical rep of data scientist's best guess about the underlying processes that created the data
+* Break it down
+
+"SIMPLIFIED'
+* when creating a model, data scientist prioritizes info dense features- elements that explain a large amount of variance in the outcome of interest
+* by excluding less informative features, the model does not perfectly rep the data but its simplified form is easier to understand and work with
+
+"MATHMATICAL REPRESENTATION"
+ *stat model is math formula or series of formulas
+ * can also be represented using words or programming statements, but tese are just flosses on the math
+
+"DATA SCIENTIST'S BEST GUESS"
+* model we propose and test rep our best understanding of the data at that time- our best guess about the underlying processes that led to the outcomes we observe
+* the model design is informed by prior knowledge about the topic area, visual inspection of the data, and the outcomes of fitting previous models to the data
+
+"UNDERLYING PROCESSES"
+* good model gives some insight into how your variable of interest came to have the values that it does
+* this aspect of modeling is partifularly useful when we are interested in predicting future outcomes. 
+* if we have a reasonable approx of the underlying processes that created the outcomes we have in the data, we can use the model to predict how those underlying processes would repsond to new data and what outcomes would result
+* map ex: show all lines and how they intersect. map not only shows travelers where they need to go but idea of what iwll happen to get them there
+* it is the goal of ever data scientist to creat stat models that are as efficient and useful as map. 
+
+MODELS AND MATH
+* stat models based on math formulas or set of formulas 
+* different models, need to see which one is appropriate. 

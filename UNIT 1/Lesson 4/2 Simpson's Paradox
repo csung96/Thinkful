@@ -1,0 +1,38 @@
+imagine analyzing gender differences in university's admissions for grad progrrams
+* compute proportion of successful female applciants and compare it to the proportion of successful male applicants and get following
+     M: 8442 applicants; 44% admitted
+     F: 4321 applicants; 35% admitted
+* overall women are less likely to be admitted to grad programs at university than men
+* intrigued, dig deeper and compute prop of successful applicatnts of each gender for each grad program separatley
+Department  Male Applicants  Male Admitted   Female Applicants  Female Admitted
+A                 825            62%               108               82%
+B                 560            63%               25                68%
+C                 325            37%               593               34%
+D                 417            33%               375               35%
+E                 191            28%               393               24%
+F                 373            6%                341                7%
+
+* when broken down by department, women appear ot have same or slighly better chance of being admitted than men (exact opposite of what we observed before)
+* at this point we have to start checking your code errors, but theres no need
+* Example of SIMPSONS PARADOX
+
+Simpson's Paradox: phenomenon when avg over a number of groups shows one trend but avg for each individual group shows opposite trend
+* another name = 'Lurking Variable Problem'
+* where an unaccounted for third variable changes the rel b/w two other variables
+
+in ex: third variable = total number of men and women that applied to each program. 
+* looking at numbers above, many more men than women applied to programs A and B which had high admittance rates.
+* women were more likely to apply to programs with low admittance rates
+* means overall, a man had greater chance of being admitted not b/c cause he was a man but b.c he was likely to apply to program that admitted a high %
+
+
+
+another ex: changes in the median wage
+* from 2000 to 2013, median wage rose slightly
+* yet during same period, median wage for every educational group (HS dropouts, HS grad, college grad) went down
+* the lurking variable here is demographic changes in US over that period-- a greater prop of americans had college degrees in 2013 than 2000
+* since people with college degrees get paid on avg more than ppl with only HS diploma, overall median wage could rise for pop even as it dropped for each group
+
+LESSON of Simpson's Paradox: pay attention to how groups differ from one another before averaging across them 
+* averaging a small group with a large one or averaging multiple groups with very different demographics can produce unexpected or illogical results
+* use randomization to avoid simpsons paradox
