@@ -1,0 +1,16 @@
+SELECT 
+	*
+from
+	listings
+order by price desc
+limit 1
+
+
+SELECT 
+	neighbourhood
+from
+	listings
+group by neighbourhood 
+order by neighbourhood DESC
+
+* western addition / NOPA was the most popular neighborhood
