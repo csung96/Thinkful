@@ -13,7 +13,7 @@ As a recent college graduate, I wanted to learn and gain more knowledge and skil
 
 ## Requirements
 ## How this repo works:
-You will need to install Python 3.6, Jupyter notebook, most of the data science libraries, and/or Anaconda on your desktop, 
+You will need to install Python 3.6, Jupyter notebook, most of the data science libraries, and/or Anaconda on your desktop. 
 
 
 # Units and Lessons
