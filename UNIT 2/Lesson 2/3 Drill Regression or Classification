@@ -1,0 +1,22 @@
+1. The amount a person will spend on a given site in the next 24 months.
+    * Regression: continuous outcome variable
+    * Can compare values and calculate mean rather than how many times each
+      discrete value occurs. 
+2. What color car someone is going to buy.
+    * Discrete outcome from a set--> Classification
+    * Can see which color has max
+3. How many children a family will have.
+    * Both
+    * Classification: since number of chilren can come from a set of discrete
+      possible outcomes
+    * Regression: to find the average
+4. If someone will sign up for a service.
+    * outcome will only be {Yes, No, Maybe} --> discrete --> classification
+5. The number of times someone will get sick in a year.
+    * Most likely want to find mean so we will use continuous numbers -->
+      regression
+6. The probability someone will get sick in the next month.
+    * Put outome on bounded/unbounded line
+    * Continuous outcome variable--> Regression
+7. Which medicine will work best for a given patient.
+    * Classification --> discrete set of outcome variables {A, B, C}

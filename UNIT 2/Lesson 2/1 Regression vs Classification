@@ -1,0 +1,42 @@
+When building model: 
+* First Q to ask: what kind of model do i need to build?
+* Two main groups: classification and regression
+
+CLASSIFICATION
+* When building supervised model, there is always some kind of oucome of interest. 
+* what kind of variable that is --> determines what kind of model to build
+
+* For classification--> Categorical variable
+    * variable only takes discrete values from within a specified set
+    * EX: yes/no , heads/tails , high/medium/low , buy/rent/no purchase
+    * almost anything can be discretly counted and labeled can be considered
+      categorical
+    * Three kinds of categorical variable: ordinal, interval, ratio
+
+* outcome of a classifier will either
+    * assign a category to given test obs
+    * or it will assign a prob of each category
+* this means if the potential outcomes were yes/no for a given test row the output of a classifier would either be yes or no or some prob measure for each such as {.2, .8}
+
+* With a classifier, only outcomes that will be seen as possible have to be in the training set
+    * if your test set has a value for the outcome variable that was not in the
+       training set, it will not be able to predict it correctly
+    * EX: if you were trying to predict the show that someone would watch on a
+      movie website and a new movie was released
+      
+
+REGRESSION
+* contrast to classification--> regression have continuous outcome variable
+* can output either on a bounded or unbounded number line
+* this implies a rel b/w variables
+* means soemthing like 3 is greater than 2 is greater than 1, and intermediate values imply they are between each other
+
+EX variables that would work for reg would be like: 
+    * amount spent: could range from 0 to something large
+    * temp: ranges from 0 to something observably high
+    
+    
+EXAMPLE
+Interested in  the number of cars owned {0, 1, 2, 3, 4, 5} and you've never seen someone with more than 5. Should you use regression or classification?
+
+EITHER: If you use classification then for each observation you're only going to be able to evaluate the likelihood of each given value. Each outcome level will be treated discretely and the relationship between them is not predefined. But if you use regression you're going to find their most likely place along a continuous line, without necessarily even having bounds at zero or 5. Each approach has its advantages, and which one you'll want to use will depend on how you want to use the output. Keep in mind a classifier generally does not average these outcomes for you, so if you're just getting a single output it will give you the most likely outcome, not the average.

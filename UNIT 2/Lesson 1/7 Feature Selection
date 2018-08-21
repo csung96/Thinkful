@@ -1,0 +1,39 @@
+Feature selection
+* want to keep features that have strongest connections to the outcome
+* need to prioritize feautures
+* Goal = settle on set of features that is relatively straightforward to understand, predictively powerful, minimizes overfitting, and relatively computationally efficient
+* all feature selection alg have something in common- work better when data is separated into training set and a test set, and feature selection is running on training set
+
+FEATURE SELECTION ALGORITHMS FALL INTO THREE BROAD GROUPS:
+1. FILTER METHODS
+    * evaluate each feature separately and assign it a score that is used to rank the
+      features- scores above cutoff is retained/discarded
+    * feature may be evaluated independently of outcome or in combin w/ it
+    * variance thresholds, where only features w/ var above cutoff are retained,are an 
+      example of independently evaluating feature
+    * the corr of each feature w/ the outcome can also be used as filter method
+    
+    * filter methods good at selecting relevant features that are liekly to be related
+      to the outcome
+    * they are computationally simple and straightforward
+    * BUT likely to produce lists of redundant features since inter-feature rel are
+      not considered
+    * cheap to run --> might use this method as first pass at reducing features
+2. WRAPPER METHODS
+    * selects sets of features
+    * different sets are constructed, eval in terms of predictive power, performance is compared to the perform of other sets
+    * wrapper methods differ in terms of how the sets of features are constructed
+    * two such feature construction methods are forward passes and backward passes
+    * forward passes: algorithm begins with no feautres and adds features one by one
+      (always add feature that results in highest increase in predictive power and
+      stop at soem predet threshold)
+    * backward pass: alg begins with all features and drops features one by one
+      (always drop feature with least predictive power and stop and some threshold)
+    * considered greedy b/c once feature is added or removed, never again evaluated
+    
+    * good at selecting useful sets of features that effectively predict outcome
+    * can be intensive for larger sets of features
+3. EMBEDDED METHODS
+    * selects sets of features but does so as an intrinsic part of the fitting method for particular type of model youre using
+    * this might involve regularizatin where complexity penalty is added to goodness of fit measures 
+    * provide benefits of wrapper methods but less computationally intensive
