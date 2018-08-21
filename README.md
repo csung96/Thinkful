@@ -17,6 +17,14 @@ You will need to install Python 3.6, Jupyter notebook, most of the data science 
 
 
 # Units and Lessons
+## Unit 1: Data and Analysis- Data science for investigations
+  - Lesson 1: What is data science?
+    * [Thinking like a data scientest](#3-thinking-like-a-data-scientist)
+  - Lesson 2: SQL Data access methods
+  - Lesson 3: Intermediate visualization
+  - Lesson 4: Experimental design
+  - Lesson 5: Unit 1 capstone
+## Unit 2: 
 ## Unit 4: Unsupervised Learning - Venturing into the unknown
   - Lesson 1: Unsupervised Learning Overview
   - Lesson 2: Basic Clustering
