@@ -1,0 +1,33 @@
+TYPES OF NAIVE BAYES
+* When running the Naive Bayes classifier, you will need to make another assumption. 
+* Assumption is about the distribution of P(xi|y)
+
+Three main classifiers: 
+1. Bernoulli (Binomial)
+2. Multinomial
+3. Gaussian Naive (Normal)
+
+The distributions have limitations
+* Binomial can only take 2 values
+* Multinomial has discrete outcomes
+* Guissian takes values along the cont norm dist
+
+Choosing which kind of classifer you want depends on dist of your outcome variable
+    * Choose the dist that best fits your data!
+    
+    
+IMPROVING PERFORMANCE
+* Improe performance of your model
+    * feature engineering: to draw out the right features for the model
+    * feature selection also important
+        * features equally weighted--> highly corr features can lead to doubling the
+          impact of what is essentially a single feature. 
+        * Assumption is that every pair of variables in independent from each other
+        * The more removed--> the more problems you will run into
+        
+
+DOWNSIDE: 
+* Assumption of independence
+    * It is a condition you'll often fail to have, but also means that any time two variables affect outcome most in concert, model will fail to see it
+    * This is called an interaction (occurs when any two features create a different effect when they both have a specific value than they would as independent occurances) 
+    * Naive can only predict outcome of categories it has seen before. 
